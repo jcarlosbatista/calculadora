@@ -33,3 +33,6 @@ env/
 venv/
 ENV/
 .venv
+
+# Streamlit
+.streamlit/

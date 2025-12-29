@@ -43,6 +43,61 @@ npm run dev
 - ✅ Modo DEG/RAD para funções trigonométricas
 - ✅ Todas as operações matemáticas disponíveis
 
+## 🎨 Versão Streamlit (Web Interface)
+
+### Requisitos Streamlit
+
+- Python 3.8 ou superior
+- Streamlit (instalado via requirements.txt)
+
+### Como executar a versão Streamlit
+
+#### Opção 1: Usando o script de execução (mais fácil)
+```bash
+./run_streamlit.sh
+```
+
+#### Opção 2: Execução manual
+
+1. Crie um ambiente virtual (se ainda não criou):
+```bash
+python3 -m venv venv
+```
+
+2. Ative o ambiente virtual:
+```bash
+source venv/bin/activate  # No Windows: venv\Scripts\activate
+```
+
+3. Instale as dependências (se ainda não instalou):
+```bash
+pip install -r requirements.txt
+```
+
+4. Execute a aplicação Streamlit:
+```bash
+streamlit run calculadora_streamlit.py
+```
+
+5. A aplicação abrirá automaticamente no navegador em `http://localhost:8501`
+
+6. Use a calculadora científica com interface web interativa!
+
+**Nota:** 
+- Se o navegador não abrir automaticamente, acesse manualmente `http://localhost:8501`
+- Para parar a aplicação, pressione `Ctrl+C` no terminal
+- Se você já criou o ambiente virtual anteriormente, apenas ative-o com `source venv/bin/activate` antes de executar o Streamlit
+
+### Funcionalidades do Streamlit
+
+- ✅ Interface web moderna e responsiva
+- ✅ Modo científico e básico (alternável)
+- ✅ Histórico de cálculos
+- ✅ Memória (MC, MR, M+, M-)
+- ✅ Modo DEG/RAD para funções trigonométricas
+- ✅ Todas as operações matemáticas disponíveis
+- ✅ Design limpo e intuitivo
+
 ## 🐍 Versão Python (CLI)
 
 ### Requisitos Python
@@ -94,18 +149,20 @@ Resultado: 10.0 + 5.0 = 15.0
 
 ```
 CursorAI_Lab/
-├── calculadora.py          # Versão Python (CLI)
-├── package.json            # Dependências do frontend
-├── vite.config.ts          # Configuração do Vite
-├── tsconfig.json           # Configuração TypeScript
-├── index.html              # HTML principal
+├── calculadora.py              # Versão Python (CLI)
+├── calculadora_streamlit.py    # Versão Streamlit (Web)
+├── requirements.txt            # Dependências Python (Streamlit)
+├── package.json                # Dependências do frontend React
+├── vite.config.ts              # Configuração do Vite
+├── tsconfig.json               # Configuração TypeScript
+├── index.html                  # HTML principal
 ├── src/
-│   ├── main.tsx           # Ponto de entrada React
-│   ├── App.tsx             # Componente principal da calculadora
-│   ├── index.css           # Estilos globais
+│   ├── main.tsx               # Ponto de entrada React
+│   ├── App.tsx                 # Componente principal da calculadora
+│   ├── index.css               # Estilos globais
 │   └── lib/
-│       └── utils.ts        # Utilitários (cn function)
-└── README.md               # Este arquivo
+│       └── utils.ts            # Utilitários (cn function)
+└── README.md                   # Este arquivo
 ```
 
 ## Licença
