@@ -74,3 +74,4 @@ Este projeto é de código aberto e está disponível para uso livre.
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
+
